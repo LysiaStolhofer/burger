@@ -6,6 +6,6 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 * Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-* Your app will store every burger in a database, whether devoured or not.
+* The app will store every burger in a database, whether devoured or not.
 
 In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).It follows the MVC design pattern; with Node and MySQL to query and route data in my app, and Handlebars to generate the HTML.
