@@ -1,10 +1,10 @@
-var express = require("express");
-var router = express.Router();
-var burger = require("../models/burger.js");
+const express = require("express");
+const router = express.Router();
+const burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
   burger.all(function(data) {
-    var hbsObject = {
+    const hbsObject = {
       burgers: data
     };
     console.log(hbsObject);
@@ -23,7 +23,7 @@ router.post("/", function(req, res) {
 });
 
 router.put("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+  const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
@@ -35,7 +35,7 @@ router.put("/:id", function(req, res) {
 });
 
 router.delete("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+  const condition = "id = " + req.params.id;
 
   burger.delete(condition, function() {
     res.redirect("/");
