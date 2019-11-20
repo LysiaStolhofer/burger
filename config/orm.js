@@ -1,10 +1,10 @@
 // Import MySQL connection.
-var connection = require("../config/connection.js");
+const connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
-    var arr = [];
+    const arr = [];
 
-    for (var i = 0; i < num; i++) {
+    for (const i = 0; i < num; i++) {
         arr.push("?");
     }
 
@@ -12,9 +12,9 @@ function printQuestionMarks(num) {
 }
 
 function objToSql(ob) {
-    var arr = [];
+    const arr = [];
 
-    for (var key in ob) {
+    for (const key in ob) {
         if (Object.hasOwnProperty.call(ob, key)) {
             arr.push(key + "=" + ob[key]);
         }
@@ -23,9 +23,9 @@ function objToSql(ob) {
     return arr.toString();
 }
 
-var orm = {
+const orm = {
     all: function (tableInput, cb) {
-        var queryString = "SELECT * FROM " + tableInput + ";";
+        const queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
@@ -34,7 +34,7 @@ var orm = {
         });
     },
     create: function (table, cols, vals, cb) {
-        var queryString = "INSERT INTO " + table;
+        const queryString = "INSERT INTO " + table;
 
         queryString += " (";
         queryString += cols.toString();
@@ -53,7 +53,7 @@ var orm = {
         });
     },
     update: function (table, objColVals, condition, cb) {
-        var queryString = "UPDATE " + table;
+        const queryString = "UPDATE " + table;
 
         queryString += " SET ";
         queryString += objToSql(objColVals);
