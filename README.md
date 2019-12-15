@@ -51,3 +51,5 @@ It follows the MVC design pattern; with Node and MySQL to query and route data i
 - :page_facing_up: package-lock.json
 - :page_facing_up: package.
 - :page_facing_up: server.js
+--------------------------------------------------------------------------------------------------------------------------------
+:earth_americas: https://frozen-cove-06891.herokuapp.com/
