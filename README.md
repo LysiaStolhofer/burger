@@ -1,4 +1,4 @@
-# Node Express Handlebars / Eat-Da-Burger :hamburger:
+# Eat-Da-Burger :hamburger:
 
 _Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat._
 
