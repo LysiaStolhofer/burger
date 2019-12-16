@@ -4,7 +4,7 @@ _Eat-Da-Burger! is a restaurant app that lets users input the names of burgers t
 
 * Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
 
-* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+* Each burger in the waiting area also has a _Devour it!_ button. When the user clicks it, the burger will move to the right side of the page.
 
 * The app will store every burger in a database, whether devoured or not.
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -20,8 +20,7 @@ _Eat-Da-Burger! is a restaurant app that lets users input the names of burgers t
 It follows the MVC design pattern; with Node and MySQL to query and route data in my app, and Handlebars to generate the HTML.
 
 -----------------------------------------------------------------------------------------------------------------------------------
-
-## Structure
+## Burger Structure
 
 - :file_folder: config
   - :page_facing_up: connection.js
@@ -53,3 +52,5 @@ It follows the MVC design pattern; with Node and MySQL to query and route data i
 - :page_facing_up: server.js
 --------------------------------------------------------------------------------------------------------------------------------
 :earth_americas: https://frozen-cove-06891.herokuapp.com/
+
+Guten Appetit! (means: 'Enjoy!')
